@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Me!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        background: #10141e;
+      }
+      
+      /*   Add the basic styles and effects below   */
+      button {
+        position: relative;
+        display: block;
+        width:240px;
+        height: 60px;
+        font-size: 2.4rem;
+        outline: none;
+        background: #10141e;
+        color: #ffa260;
+        border: 1px solid #ffa260;
+        cursor: pointer;
+        transition: all 700ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      button:hover {
+        top: -5px;
+        color: #fff;
+        border-color: #f1ff5c;
+        box-shadow: 0 2px 8px #f1ff5c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>Hover Me</button>
+  </body>
+</html>
