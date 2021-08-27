@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Midterm Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="assets/styles/bootstrap-reboot.min.css"> -->
+    <link rel="stylesheet" href="assets/styles/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div>
+          <a class="logo" href="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 75 58"
+            >
+              <image
+                data-name="logo"
+                width="75"
+                height="58"
+                xlink:href="data:image/png;base64,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"
+              />
+            </svg>
+          </a>
+        </div>
+        <nav class="col">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Client</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="row hero">
+        <div class="hero-item"></div>
+        <div class="hero-content">
+          <h1>Go digital with us</h1>
+          <p>
+            We have designed hundreds of websites and helped improve their
+            online performance through SEO, SEM and Social Media Marketing
+          </p>
+          <a class="btn-hero" href="/">See Portfolio</a>
+        </div>
+      </div>
+      <div class="row info-box">
+        <h3>We are experienced</h3>
+        <p>
+          We have been around for a long time since 2010, thousands of products
+          have been created, we are always here to provide new innovations for
+          you.
+        </p>
+      </div>
+      <div class="row clients">
+        <div class="col">
+          <h2>Client</h2>
+          <p>Using Our Experience To Make Your Digital Experience Brighter</p>
+          <figure>
+            <img src="assets/images/clients.png" alt="Clients" />
+          </figure>
+        </div>
+      </div>
+
+      <div class="row who">
+        <figure class="col">
+          <img src="assets/images/who-we-help.png" alt="" />
+        </figure>
+        <div class="col who-content">
+          <h2>
+            <span>Who We Help</span>Specific challenges require specific
+            solutions<em
+              >Some of the industries our digital agency specialises in</em
+            >
+          </h2>
+          <div class="services">
+            <div class="service-box">
+              <h4>
+                <div class="service-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <g stroke="#105286">
+                      <path
+                        fill="#8fb6d7"
+                        d="M7.569 20.774h16.806M7.57 11.17h16.806m-8.403-4.802v19.208M6.37 15.972h19.207m0 0c0 5.304-4.3 9.604-9.604 9.604-5.304 0-9.603-4.3-9.603-9.604 0-5.304 4.3-9.604 9.603-9.604 5.304 0 9.604 4.3 9.604 9.604z"
+                      />
+                      <path
+                        fill="none"
+                        d="M12.669 7.032c-2.44 6.006-2.834 11.605-.192 17.8m6.726-17.8c2.44 6.006 2.834 11.605.192 17.8"
+                      />
+                      <path
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5.387 22.083A12.223 12.222 0 018.53 6.275 12.223 12.222 0 0124.615 7.33"
+                      />
+                      <path
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M24.636 5.533v1.819h-1.818M7.358 26.486v-1.818h1.82"
+                      />
+                      <path
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M26.613 9.917a12.222 12.223 90 01-3.145 15.808A12.222 12.223 90 017.384 24.67"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                Web & Mobile Apps
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-box">
+              <div class="service-content">
+                <h4>
+                  <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                      <path
+                        fill="#2a2f63"
+                        d="M49.14 13.08H25.23c-2.07 0-3.75 1.68-3.75 3.75v16.29h-1.61v-9.23c0-1.71-1.4-3.11-3.11-3.11H3.27c-1.72 0-3.11 1.4-3.11 3.11v19.64c0 1.72 1.39 3.11 3.11 3.11h5.41v3.55c0 1.63 1.33 2.96 2.97 2.96h9.83v1.09a3.75 3.75 0 003.75 3.74h23.91c2.06 0 3.75-1.68 3.75-3.74V16.83c0-2.07-1.69-3.75-3.75-3.75zm-40.46 23v7.7H3.27c-.13 0-.25-.12-.25-.25V23.89c0-.13.12-.24.25-.24h13.49c.13 0 .24.11.24.24v9.23h-5.35c-1.64 0-2.97 1.33-2.97 2.96zm2.97 14.2c-.06 0-.1-.04-.1-.09V36.08c0-.05.04-.09.1-.09h25.54c.06 0 .1.04.1.09v14.11c0 .05-.04.09-.1.09H11.65zm38.37 3.96c0 .48-.4.87-.88.87H25.23c-.49 0-.88-.39-.88-.87v-1.09h12.84c1.64 0 2.97-1.33 2.97-2.96V36.08c0-1.63-1.33-2.96-2.97-2.96H24.35V16.83c0-.49.39-.89.88-.89h23.91c.48 0 .88.4.88.89v37.41z"
+                      />
+                      <path
+                        fill="#d6e9f2"
+                        d="M17 23.89v9.23h-5.35c-1.64 0-2.97 1.33-2.97 2.96v7.7H3.27c-.13 0-.25-.12-.25-.25V23.89c0-.13.12-.24.25-.24h13.49c.13 0 .24.11.24.24z"
+                      />
+                      <path
+                        fill="#d6e9f2"
+                        d="M37.19 35.99H11.65c-.06 0-.1.04-.1.09v14.11c0 .05.04.09.1.09h25.54c.06 0 .1-.04.1-.09V36.08c0-.05-.04-.09-.1-.09zM26.56 44.2l-2.15 2.15a1.432 1.432 0 01-2.03 0c-.56-.56-.56-1.46 0-2.02l1.14-1.14-1.24-1.25c-.56-.56-.56-1.46 0-2.02s1.46-.56 2.02 0l2.26 2.25c.27.27.42.64.42 1.02s-.15.74-.42 1.01z"
+                      />
+                      <path
+                        fill="#9fd1f0"
+                        d="M50.02 16.83v37.41c0 .48-.4.87-.88.87H25.23c-.49 0-.88-.39-.88-.87v-1.09h12.84c1.64 0 2.97-1.33 2.97-2.96V36.08c0-1.63-1.33-2.96-2.97-2.96H24.35V16.83c0-.49.39-.89.88-.89h23.91c.48 0 .88.4.88.89z"
+                      />
+                      <path
+                        fill="#2a2f63"
+                        d="M18.6 6.02H1.43C.64 6.02 0 6.66 0 7.45v10.48c0 .79.64 1.43 1.43 1.43H18.6c.79 0 1.43-.64 1.43-1.43V7.45c0-.79-.64-1.43-1.43-1.43zm-1.43 10.47H2.87v-7.6h14.3v7.6z"
+                      />
+                      <path
+                        fill="#d6e9f2"
+                        d="M2.87 8.89v7.6h14.3v-7.6H2.87zm9.29 4.87L10 15.91c-.28.28-.64.42-1.01.42s-.73-.14-1.01-.42c-.56-.56-.56-1.47 0-2.03l1.14-1.14-1.25-1.24A1.436 1.436 0 019.9 9.47l2.26 2.26c.56.56.56 1.47 0 2.03z"
+                      />
+                      <path
+                        fill="#2a2f63"
+                        d="M12.16 13.76L10 15.91c-.28.28-.64.42-1.01.42s-.73-.14-1.01-.42c-.56-.56-.56-1.47 0-2.03l1.14-1.14-1.25-1.24A1.436 1.436 0 019.9 9.47l2.26 2.26c.56.56.56 1.47 0 2.03zm14.82 29.43c0 .38-.15.74-.42 1.01l-2.15 2.15a1.432 1.432 0 01-2.03 0c-.56-.56-.56-1.46 0-2.02l1.14-1.14-1.24-1.25c-.56-.56-.56-1.46 0-2.02s1.46-.56 2.02 0l2.26 2.25c.27.27.42.64.42 1.02zM63.9 22.17v-.02l-2.87-7.21a1.45 1.45 0 00-1.31-.9h-.02c-.57 0-1.08.33-1.31.85l-3.21 7.21-.01.01c-.03.07-.05.15-.07.22 0 .02-.01.04-.02.06-.02.09-.03.19-.03.29v29.86c0 2.47 2.01 4.48 4.48 4.48 2.46 0 4.47-2.01 4.47-4.48V22.68c0-.18-.04-.35-.1-.51zm-4.28-3.01l.83 2.09h-1.76l.93-2.09zm1.51 33.38c0 .89-.72 1.61-1.6 1.61-.89 0-1.61-.72-1.61-1.61v-.72h3.21v.72zm0-3.59h-3.21V24.11h3.21v24.84z"
+                      />
+                      <path fill="#ffe4aa" d="M60.45 21.25h-1.76l.93-2.09z" />
+                      <path
+                        fill="#53be9e"
+                        d="M61.13 51.82v.72c0 .89-.72 1.61-1.6 1.61-.89 0-1.61-.72-1.61-1.61v-.72h3.21z"
+                      />
+                      <path fill="#f16e61" d="M57.92 24.11h3.21v24.84h-3.21z" />
+                    </svg>
+                  </div>
+                  Design Services
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div class="service-box">
+              <h4>
+                <div class="service-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                    viewBox="0 0 512 512"
+                  >
+                    <rect
+                      width="437"
+                      height="422"
+                      x="7.5"
+                      y="45"
+                      fill="#7a6d79"
+                      rx="27.451"
+                    />
+                    <path
+                      fill="#685e68"
+                      d="M417.05 45h-30a27.45 27.45 0 0127.45 27.45v367.1A27.45 27.45 0 01387.05 467h30a27.45 27.45 0 0027.45-27.45V72.45A27.45 27.45 0 00417.05 45z"
+                    />
+                    <path
+                      fill="#f9f7f8"
+                      d="M34.95 467h382.1a27.45 27.45 0 0027.45-27.45V99.221H325.952a29.869 29.869 0 01-24.934-13.469L283.04 58.47A29.869 29.869 0 00258.106 45H220.05a29.894 29.894 0 00-26.502 16.138l-11.423 21.946a29.894 29.894 0 01-26.502 16.138H7.5V439.55A27.45 27.45 0 0034.95 467z"
+                    />
+                    <path
+                      fill="#e5e1e5"
+                      d="M414.5 99.222V439.55A27.45 27.45 0 01387.05 467h30a27.45 27.45 0 0027.45-27.45V99.221z"
+                    />
+                    <path
+                      fill="#b3dafe"
+                      d="M257.69 336.309h-39.848v-34.875h35.785a15.259 15.259 0 100-30.517h-35.785v-34.874h39.848a15.259 15.259 0 000-30.518h-55.107a15.26 15.26 0 00-15.259 15.26v130.783a15.26 15.26 0 0015.259 15.259h55.107a15.259 15.259 0 000-30.518zm-157.385 30.518c-21.933 0-43.354-9.188-57.301-24.577a15.26 15.26 0 011.933-22.29 15.53 15.53 0 0120.88 2.015c8.268 8.98 21.135 14.334 34.488 14.334 13.405 0 22.87-8.15 24.277-16.029 1.917-10.734-12.017-17.108-18.096-19.35l-.896-.331c-11.87-4.378-24.143-8.904-35.98-14.454a40.881 40.881 0 01-22.724-42.73c2.49-17.1 15.044-31.036 32.76-36.373 26.011-7.836 48.658 3.06 59.342 9.81 7.35 4.643 9.448 14.699 4.156 21.596q-.326.424-.68.83a11.933 11.933 0 01-4.32 2.86 20.965 20.965 0 01-18.31-1.188c-6.895-3.804-18.814-8.472-31.386-4.687-4.67 1.407-10.449 5.276-11.363 11.551a10.16 10.16 0 005.48 10.7c10.66 4.998 22.315 9.296 33.585 13.452l.897.33c32.583 12.02 40.776 35.44 37.578 53.348-2.033 11.388-8.639 21.849-18.599 29.454a59.04 59.04 0 01-35.721 11.729z"
+                    />
+                    <path
+                      fill="#c9bfc8"
+                      d="M414.43 361.267l26.423-15.256 18.385 31.844-26.423 15.256z"
+                    />
+                    <path
+                      fill="#baafb9"
+                      d="M427.566 353.682l18.385 31.844 13.287-7.672-18.385-31.843-26.423 15.255 13.136-7.584z"
+                    />
+                    <path
+                      fill="#ab695d"
+                      d="M436.121 384.855l14.315-8.265a18.726 18.726 0 0125.58 6.855l24.864 43.065a26.99 26.99 0 01-9.88 36.87 26.99 26.99 0 01-36.869-9.88l-24.864-43.065a18.726 18.726 0 016.854-25.58z"
+                    />
+                    <path
+                      fill="#935b50"
+                      d="M500.88 426.51l-24.865-43.066a18.726 18.726 0 00-25.58-6.854l-6.606 3.814a18.806 18.806 0 012.186 3.04l24.864 43.066a26.987 26.987 0 01-8.38 35.93 26.987 26.987 0 0028.501.94 26.99 26.99 0 009.88-36.87z"
+                    />
+                    <circle
+                      cx="388.344"
+                      cy="285.573"
+                      r="82.967"
+                      fill="#b3dafe"
+                    />
+                    <path
+                      fill="#8ac9fe"
+                      d="M460.195 244.09a83.098 83.098 0 00-86.976-40.082 82.925 82.925 0 01.25 163.13 82.903 82.903 0 0086.726-123.049z"
+                    />
+                    <circle
+                      cx="388.344"
+                      cy="285.573"
+                      r="55.157"
+                      fill="#eaf6ff"
+                    />
+                    <path
+                      d="M357.015 231.31a62.657 62.657 0 1085.591 22.935 62.728 62.728 0 00-85.59-22.934zm72.6 30.435a47.6 47.6 0 11-41.349-23.85 47.922 47.922 0 0112.412 1.645 47.343 47.343 0 0128.938 22.205zM45.012 64.594a7.522 7.522 0 107.48 7.522 7.501 7.501 0 00-7.48-7.522zm29.918 0a7.522 7.522 0 107.48 7.522 7.501 7.501 0 00-7.48-7.522zm182.76 178.949a22.759 22.759 0 100-45.518h-55.106a22.784 22.784 0 00-22.759 22.76v130.783a22.784 22.784 0 0022.759 22.759h55.107a22.759 22.759 0 100-45.518h-32.348v-19.874h28.284a22.759 22.759 0 000-45.518h-28.284v-19.874zm-39.847 34.873h35.784a7.759 7.759 0 010 15.519h-35.784a7.5 7.5 0 00-7.5 7.5v34.874a7.5 7.5 0 007.5 7.5h39.848a7.759 7.759 0 110 15.518h-55.107a7.767 7.767 0 01-7.759-7.76V220.785a7.767 7.767 0 017.759-7.759h55.107a7.759 7.759 0 110 15.518h-39.848a7.5 7.5 0 00-7.5 7.5v34.873a7.5 7.5 0 007.5 7.5zM507.375 422.76l-24.864-43.066a26.054 26.054 0 00-15.925-12.219 26.48 26.48 0 00-5.166-.85l-9.59-16.595a89.86 89.86 0 0019.084-27.565A90.427 90.427 0 00452 221.287V72.45A34.99 34.99 0 00417.05 37.5H34.95A34.99 34.99 0 000 72.45v367.1a34.99 34.99 0 0034.95 34.95h382.1a34.965 34.965 0 0030.352-17.655l.234.405a34.49 34.49 0 0059.739-34.49zM453.7 247.84a75.78 75.78 0 013.511 68.522 75.446 75.446 0 11-69.056-106.26 76.096 76.096 0 0119.711 2.613 74.954 74.954 0 0145.834 35.124zm-7.453 122.508l-13.44 7.76-6.12-10.601a91.84 91.84 0 006.89-3.587 91.8 91.8 0 006.547-4.169zM417.05 52.5A19.973 19.973 0 01437 72.45v19.272H325.952a22.32 22.32 0 01-18.671-10.096l-17.978-27.283c-.416-.63-.85-1.244-1.298-1.843zM15 72.45A19.973 19.973 0 0134.95 52.5h155.218a37.886 37.886 0 00-3.272 5.176L175.474 79.62a22.333 22.333 0 01-19.85 12.101H15zm422 367.1a19.973 19.973 0 01-19.95 19.95H34.95A19.973 19.973 0 0115 439.55V106.721h140.624a37.286 37.286 0 0033.155-20.176l11.423-21.945a22.333 22.333 0 0119.85-12.101h38.054a22.32 22.32 0 0118.671 10.096l17.978 27.283a37.28 37.28 0 0031.197 16.843H437v102.582a90.907 90.907 0 00-25.251-11.078 90.428 90.428 0 10-46.81 174.694 91.165 91.165 0 0023.618 3.13 89.305 89.305 0 0023.864-3.253l9.576 16.59a26.488 26.488 0 00-1.845 4.897 26.053 26.053 0 002.62 19.9l14.262 24.703c-.02.218-.034.439-.034.662zm50.25 17.334a19.515 19.515 0 01-26.624-7.133l-24.864-43.066a11.239 11.239 0 014.11-15.335l14.314-8.265a11.157 11.157 0 015.594-1.508 11.284 11.284 0 012.924.387 11.154 11.154 0 016.817 5.23l24.863 43.066a19.513 19.513 0 01-7.134 26.624zM119.64 265.26l-.93-.343c-11.11-4.099-22.6-8.336-32.962-13.195a2.707 2.707 0 01-1.241-2.827c.403-2.771 3.872-4.778 6.103-5.45 9.744-2.934 19.3.596 25.6 4.072a28.629 28.629 0 0024.88 1.518 18.888 18.888 0 007.028-4.828c.339-.39.665-.789.976-1.193a22.025 22.025 0 004.148-17.246 22.816 22.816 0 00-10.248-15.257c-12.162-7.685-36.847-19.286-65.512-10.65-20.535 6.186-35.102 22.46-38.018 42.472a48.433 48.433 0 0026.961 50.603c12.123 5.684 24.546 10.265 36.571 14.7l.894.33c7.132 2.63 14.013 7.051 13.309 10.995-.738 4.129-7.018 9.848-16.894 9.848-11.272 0-22.102-4.454-28.97-11.913-8.133-8.835-21.758-10.084-31.018-2.844a22.76 22.76 0 00-2.87 33.234c15.345 16.932 38.844 27.04 62.858 27.04a66.573 66.573 0 0040.273-13.267c11.456-8.747 19.067-20.856 21.43-34.097 3.732-20.897-5.438-48.08-42.368-61.702zm27.601 59.066c-1.702 9.536-7.301 18.347-15.766 24.811a51.504 51.504 0 01-31.17 10.19c-19.85 0-39.195-8.267-51.744-22.114a7.76 7.76 0 01.996-11.344 7.41 7.41 0 014.59-1.55 8.402 8.402 0 016.152 2.736c9.658 10.49 24.614 16.754 40.006 16.754 17.987 0 29.737-11.443 31.66-22.21 2.051-11.487-6.29-21.585-22.886-27.707l-.905-.333c-11.718-4.323-23.836-8.791-35.381-14.205a33.33 33.33 0 01-18.485-34.858c2.066-14.185 12.604-25.785 27.501-30.273 22.965-6.92 43.171 2.65 53.172 8.968a7.784 7.784 0 013.494 5.209 6.9 6.9 0 01-1.283 5.484 9.728 9.728 0 01-.36.442 5.796 5.796 0 01-1.633.914 13.542 13.542 0 01-11.741-.856c-7.222-3.985-21.655-9.973-37.173-5.303-6.78 2.043-15.2 7.891-16.622 17.652a17.707 17.707 0 009.717 18.57c10.94 5.13 22.734 9.48 34.176 13.7l.895.33c35.54 13.11 34.083 37.752 32.79 44.993zM104.848 64.594a7.522 7.522 0 107.48 7.522 7.501 7.501 0 00-7.48-7.522zm115.28 28.708h39.07a7.5 7.5 0 000-15h-39.07a7.5 7.5 0 000 15z"
+                    />
+                  </svg>
+                </div>
+                SEO
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service-box">
+              <h4>
+                <div class="service-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                    <path
+                      fill="#da4765"
+                      d="M25.92 43.09c-1.1-2.12-6.05-3.1-6.05-3.1-5.37-1.21-8.85-4.39-8.85-4.39-3.41-2.6-4.33-6.92-4.44-10.39-.07-2.18.2-4.36.71-6.48 1.8-7.51-2.99-9.8-2.99-9.8l2.19-4.54C18.43 8.01 25.92 0 25.92 0s7.48 8.01 19.43 4.38l2.19 4.54s-4.79 2.29-2.99 9.8c.51 2.12.78 4.3.71 6.48-.11 3.47-1.03 7.79-4.44 10.4 0 0-3.48 3.18-8.85 4.39-.01 0-4.96.99-6.05 3.1z"
+                    />
+                    <path
+                      fill="#e9e9e9"
+                      d="M30.75 29.22l-2.35-7.26c-.08-.25.02-.51.23-.66 1.38-.98 2.21-2.7 1.92-4.58-.32-2.04-2.02-3.67-4.07-3.91a4.704 4.704 0 00-5.27 4.67c0 1.57.77 2.96 1.96 3.81.22.16.33.43.24.69l-2.34 7.24c-.17.54.23 1.09.79 1.09h8.09c.58 0 .98-.55.8-1.09z"
+                    />
+                    <path
+                      fill="#fc6"
+                      d="M59.71 35.45v5.76c0 1.49-.09 2.97-.27 4.44L57.7 59.91c-.02.2-.04.4-.04.6V64H36.64v-2.56c0-.8-.2-1.59-.57-2.29l-5.09-9.65c-.52-.99-1.14-1.93-1.84-2.8l-7.4-9.19a3.19 3.19 0 01.48-4.48 3.19 3.19 0 014.48.48l5.5 6.83c.11.14.34.06.34-.12v-22.5c0-1.76 1.43-3.18 3.18-3.18 1.76 0 3.18 1.43 3.18 3.18v15.92c0 .15.13.28.28.28.15 0 .28-.13.28-.28v-3.82c0-1.76 1.43-3.18 3.18-3.18 1.76 0 3.18 1.43 3.18 3.18v5.7c0 .15.13.28.28.28.15 0 .28-.13.28-.28v-2.83c0-1.76 1.43-3.18 3.18-3.18h.01c1.76 0 3.18 1.43 3.18 3.18v4.58c0 .15.13.28.28.28.15 0 .28-.13.28-.28v-1.82c0-1.76 1.43-3.18 3.18-3.18h.01c1.78 0 3.21 1.43 3.21 3.18z"
+                    />
+                  </svg>
+                </div>
+                Security Tester
+              </h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div class="address">
+            Go digital with us<br /><br />
+            50 Raya Building
+            Call us: 123-456-678
+          </div>
+          <div class="sitemap">
+            <div class="col">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Client</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5>Social Media</h5>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          Copyright &copy; 2021 Steelthemes. All Rights Reserved. This design found on the internet.
+        </div>
+        <div class="footer-texture"></div>
+      </footer>
+    </div>
+  </body>
+</html>

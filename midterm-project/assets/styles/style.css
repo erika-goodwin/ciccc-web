@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #f9f9f9;
+  color: #59616d;
+  font-family: "Lato", sans-serif;
+}
+a {
+  color: #14213d;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #ef9000;
+  text-decoration: none;
+}
+
+header {
+  margin: 54px 0 46px 0;
+}
+
+.logo {
+  display: block;
+  width: 75px;
+  height: 58px;
+}
+
+.logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #303948;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  height: 707px;
+  background: transparent url("../images/bg-hero.jpg") center no-repeat;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  top: 216px;
+  left: 76px;
+  width: 470px;
+  color: #fff;
+}
+.hero-content h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 5rem;
+}
+.hero-content p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.hero-item {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  width: 638px;
+  height: 707px;
+  background: transparent url("../images/hero-guy.png") center no-repeat;
+}
+
+.btn-hero {
+  display: inline-block;
+  outline: none;
+  border: none;
+  background: #fff;
+  margin-top: 30px;
+  width: 264px;
+  height: 67px;
+  line-height: 67px;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #12182f;
+  text-decoration: none;
+  border-radius: 35px;
+}
+.btn-hero:hover,
+.btn-hero:focus {
+  background: #12182f;
+  color: #fff;
+}
+
+.info-box {
+  z-index: 10;
+  position: relative;
+  width: 796px;
+  top: -96px;
+  height: 326px;
+  margin: 0 auto;
+  padding: 100px 100px 110px 45px;
+  background: #12182f url("../images/texture.png") center no-repeat;
+  color: #fff;
+  border-radius: 35px;
+}
+
+.info-box h3 {
+  margin-bottom: 30px;
+  font-size: 3.6rem;
+}
+
+.info-box p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+.clients {
+  text-align: center;
+}
+.clients h2 {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: #303948;
+}
+.clients p {
+  font-size: 1.8rem;
+  color: #303948;
+  margin-bottom: 50px;
+}
+.clients img {
+  margin: 0 auto 70px;
+}
+.who-content h2 {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+.who-content h2 span,
+.who-content h2 em {
+  display: block;
+  font-size: 1.8rem;
+}
+.who-content h2 span {
+  margin-bottom: 20px;
+}
+.who-content h2 em {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.service-box {
+  width: 47%;
+  margin-bottom: 105px;
+  font-weight: 400;
+}
+.service-box h4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 35px;
+  color: #303948;
+}
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+.service-icon svg {
+  width: 100%;
+  height: auto;
+}
+.service-box p {
+  font-size: 1.8rem;
+  color: #59616d;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 490px;
+  background: transparent url("../images/bg-hero.jpg") top left no-repeat;
+  border-radius: 35px;
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 90px 200px 0 20px;
+  font-size: 1.8rem;
+  color: #14213d;
+}
+.sitemap {
+  display: flex;
+}
+.sitemap div:first-child {
+  margin-right: 50px;
+}
+.sitemap h5 {
+  color: #14213d;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+.sitemap ul li {
+  margin-bottom: 1.6rem;
+  list-style: none;
+}
+
+.footer-texture {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  bottom: -120px;
+  left: -20px;
+  background: transparent url("../images/texture-footer.png") center no-repeat;
+  background-size: contain;
+}
+
+.copyright {
+  padding: 0 20px;
+  font-size: 1.8rem;
+  color: #fff;
+}
