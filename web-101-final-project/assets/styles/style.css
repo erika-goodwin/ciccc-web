@@ -1,0 +1,541 @@
+@charset "UTF-8";
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box; }
+
+/**
+Use a more readable tab size (opinionated).
+*/
+html {
+  -moz-tab-size: 4;
+  tab-size: 4; }
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0; }
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */ }
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted; }
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%; }
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */ }
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none; }
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0; }
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline; }
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item; }
+
+@font-face {
+  font-family: "fontello";
+  src: url("../../assets/fonts/fontello.eot?42101267");
+  src: url("../../assets/fonts/fontello.eot?42101267#iefix") format("embedded-opentype"), url("../../assets/fonts/fontello.woff2?42101267") format("woff2"), url("../../assets/fonts/fontello.woff?42101267") format("woff"), url("../../assets/fonts/fontello.ttf?42101267") format("truetype"), url("../../assets/fonts/fontello.svg?42101267#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../../assets/fonts/fontello.svg?42101267#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-instagram:before {
+  content: "\e800"; }
+
+.icon-twitter:before {
+  content: "\e801"; }
+
+.icon-facebook:before {
+  content: "\e802"; }
+
+.icon-facebook:before {
+  content: "\e800"; }
+
+/* '' */
+.icon-instagram:before {
+  content: "\e801"; }
+
+/* '' */
+.icon-twitter:before {
+  content: "\e802"; }
+
+/* '' */
+.icon-menu:before {
+  content: "\e803"; }
+
+/* '' */
+:root {
+  --default-color: #252b42;
+  --primary-color: #fa4a0c;
+  --secondary-color: #737373;
+  --rounded-md: 30px; }
+
+html {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 62.4%;
+  color: var(--default-color); }
+
+strong {
+  font-weight: 600; }
+
+h3 {
+  font-size: 4.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.1px;
+  font-weight: 600; }
+
+.header-wrapper {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px solid rgba(23, 16, 16, 0.1);
+  box-shadow: 4px 2px 10px rgba(23, 16, 16, 0.2); }
+  .header-wrapper header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 7rem; }
+    .header-wrapper header h1 span {
+      display: none; }
+    .header-wrapper header nav {
+      display: flex;
+      align-items: center; }
+      .header-wrapper header nav a {
+        margin-right: 10rem;
+        padding: 1rem;
+        font-weight: 600;
+        font-size: 1.6rem;
+        letter-spacing: 0.2px;
+        color: var(--default-color);
+        text-decoration: none; }
+        .header-wrapper header nav a:hover, .header-wrapper header nav a:focus {
+          color: var(--primary-color); }
+        .header-wrapper header nav a:last-child {
+          margin-right: 0; }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 190px;
+  height: 620px;
+  background: transparent url("../../assets/images/bg-banner@2x.png") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(23, 16, 16, 0.6); }
+  .banner section {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 768px;
+    text-align: center; }
+    .banner section h2 {
+      font-size: 5.8rem;
+      line-height: 8rem;
+      color: #fff;
+      letter-spacing: 0.2px; }
+    .banner section span {
+      display: block;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      letter-spacing: 0.1px; }
+    .banner section em {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 100;
+      font-style: normal;
+      line-height: 3.8rem;
+      color: #f6f6f6; }
+
+.btn {
+  display: inline-block;
+  width: 236px;
+  height: 68px;
+  padding: 16px 0px;
+  margin: 0 10px;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.1px;
+  border-radius: var(--rounded-md);
+  text-decoration: none; }
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff; }
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+
+.hero {
+  position: relative;
+  margin-bottom: 560px; }
+  .hero img {
+    position: absolute;
+    left: 50%;
+    margin-left: -424px;
+    top: -300px; }
+
+.how-to h3 {
+  width: 80%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-top: 3px solid #e4e4e4;
+  text-align: center; }
+
+.how-to section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .how-to section h4 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.7rem;
+    letter-spacing: 0.2px; }
+    .how-to section h4 span {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      letter-spacing: 0.1px;
+      color: var(--primary-color); }
+  .how-to section p {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    color: var(--secondary-color); }
+  .how-to section figure {
+    max-width: 300px; }
+    .how-to section figure img {
+      position: relative;
+      left: -200px; }
+  .how-to section article {
+    max-width: 576px; }
+  .how-to section.reverse figure img {
+    left: 0;
+    right: -200px; }
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 510px;
+  background: transparent url("../../assets/images/bg-download@2x.png") top center no-repeat;
+  background-size: cover; }
+  .download::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(23, 16, 16, 0.6); }
+  .download section {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 768px;
+    text-align: center; }
+    .download section h2 {
+      font-size: 5.8rem;
+      line-height: 8rem;
+      color: #fff;
+      letter-spacing: 0.2px; }
+    .download section em {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 100;
+      font-style: normal;
+      line-height: 3.8rem;
+      color: #f6f6f6; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 120px;
+  margin: 0 auto; }
+  footer .copyright {
+    font-size: 1.2rem; }
+  footer .social-media a {
+    font-size: 4rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color); }
+
+/**
+// Small devices (landscape phones, 576px and up) 
+*/
+/**
+// Medium devices (tablets, 768px and up)
+*/
+/**
+// Large devices (desktops, 992px and up)
+*/
+/**
+// Extra large devices (large desktops, 1200px and up)
+*/
