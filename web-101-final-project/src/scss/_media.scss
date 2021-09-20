@@ -1,23 +1,130 @@
 /**
-// Small devices (landscape phones, 576px and up) 
+// Medium devices and small devices
 */
-@media (min-width: 576px) {
-}
-
-/**
-// Medium devices (tablets, 768px and up)
-*/
-@media (min-width: 768px) {
+@media (max-width: 991px) {
+  .btn-menu {
+    display: block;
+    font-size: 4rem;
+    color: var(--secondary-color);
+  }
+  .header-wrapper {
+    height: 170px;
+    padding: 2rem 2.5rem;
+    header {
+      align-items: center;
+      img {
+        max-width: 202px;
+        height: auto;
+      }
+      nav {
+        display: none;
+      }
+    }
+  }
+  .banner {
+    width: 100%;
+    margin-top: 170px;
+    background: none;
+    background-color: #fafafa;
+    &::before {
+      display: none;
+    }
+    section {
+      h2 {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+        color: var(--default-color);
+      }
+      span {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--secondary-color);
+      }
+      em {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3.8rem;
+        color: var(--secondary-color);
+      }
+    }
+  }
+  .btn {
+    margin-bottom: 25px;
+  }
+  .btn-secondary {
+    background: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+  .hero {
+    margin-bottom: 0;
+    img {
+      position: relative;
+      left: inherit;
+      margin-left: inherit;
+      top: inherit;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .how-to {
+    flex-direction: column;
+    section {
+      flex-direction: column;
+      text-align: center;
+      figure {
+        order: 2;
+        img {
+          width: 100%;
+          height: auto;
+          left: inherit;
+        }
+      }
+    }
+  }
+  .download {
+    height: auto;
+    background: none;
+    background-color: #252b42;
+    .btn-secondary {
+      background: transparent;
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+  footer {
+    flex-direction: column;
+    padding: 20px 40px;
+    .logo {
+      display: none;
+    }
+    .social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .copyright {
+      display: none;
+    }
+  }
 }
 
 /**
 // Large devices (desktops, 992px and up)
 */
 @media (min-width: 992px) {
-}
-
-/**
-// Extra large devices (large desktops, 1200px and up)
-*/
-@media (min-width: 1200px) {
+  .btn-menu {
+    display: none;
+  }
+  .header-wrapper {
+    header {
+      nav {
+        display: flex;
+      }
+    }
+  }
+  .motto {
+    display: none;
+  }
 }
