@@ -1,0 +1,28 @@
+{
+  "name": "14_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css -w",
+    "api": "json-server --watch database.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ertugrulhaskan/project-bakery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ertugrulhaskan/project-bakery/issues"
+  },
+  "homepage": "https://github.com/ertugrulhaskan/project-bakery#readme",
+  "description": ""
+}

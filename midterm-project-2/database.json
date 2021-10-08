@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Swiss Zopf",
+      "price": 5,
+      "imgPath": "image/image-swiss-zopf.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Croissant",
+      "price": 3,
+      "imgPath": "image/image-croissant-bread.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Berry Bagel",
+      "price": 2.50,
+      "imgPath": "image/image-bagle-bread.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Whip Chestnut Cake",
+      "price": 40,
+      "imgPath": "image/image-whip-maroncake.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Apple Sweet-potato Pie",
+      "price": 45.00,
+      "imgPath": "image/image-apple-sweetpotato-pie.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Chestnut Mini Cake",
+      "price": 8.00,
+      "imgPath": "image/image-maron-mini-cake.jpg"
+    },
+    {
+      "id": 7,
+      "name": "ALEX",
+      "price": 5.50,
+      "imgPath": "image/image-hat-bread.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Chestnut-past Bread",
+      "price": 5.50,
+      "imgPath": "image/image-malonpaste-bread.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Peach Bread",
+      "price": 15,
+      "imgPath": "image/image-peach-bread.jpeg"
+    }
+  ]
+}

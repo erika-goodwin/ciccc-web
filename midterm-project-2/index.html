@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mami's Bakery</title>
+    <meta name="description" content="Hot and fresh Japanese homemade breads are now avairable in
+    Vancouver from Mami's Bakery!">
+    <meta name="keywords" content="japanese bread, japanese sweets, vancouver" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-title ">
+        <h1><a href="#">Mami's Bakery</a></h1>
+      </div>
+      <div class="navbar-navigation ">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#menu" class="nav-list-link">Menu</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#access/contact" class="nav-list-link">Access/Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-cart">
+        <!-- <button type="button" class="cart-btn"><a href="#access/contact"></a>Cart</button> -->
+       
+        <input class="cart-btn" type="button" value="Cart">
+        <!-- cart -->
+        <section class="cart" id="cart">
+          <div class="cart-box">
+          <div class="cart-box-header ">
+            <h1 class="">Your Cart</h1>
+            <ion-icon name="close-circle-outline" class="close-cart "></ion-icon>
+    
+          </div>
+            <!-- cart item -->
+            <div class="cart-box-item ">
+              <!-- 
+              <div class="cart-box-item-img ">
+    
+                <img src="./image/image-swiss-zopf.jpg" alt="swiss-zopf-img" class="">
+    
+              </div>
+              <div class="cart-box-item-contain ">
+                <h4>Swiss Zopf</h4>
+                <h5>$5.00</h5>
+               
+                <p>Quantity:<span class="item-amount">1</span></p>
+              </div>
+              <div class="car-box-item-remove ">
+                <span class="remove-item">remove</span>
+              </div> 
+            -->
+              
+    
+            </div>
+            <!-- end of cart item -->
+            <hr>
+            <div class="cart-box-total">
+              <h2>Your Total: $<span class="total-price">0</span></h2>
+              <button type="button" class="btn clear-cart-btn"><a href="#menu">Clear Cart</a></button>
+            </div>
+        <!-- cart --> 
+          </div>
+        </section>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+      <div class="hero-box">
+        <div class="hero-box-gallery ">
+          <div class="hero-box-gallery-image ">
+            <img
+              src="image/image-apple-bread.jpeg"
+              alt="apple-bread-img"
+            />
+          </div>
+          <div class="hero-box-gallery-image ">
+            <img
+              src="image/image-maron-mini-cake.jpg"
+              alt="image-maron-mini-cake"
+            />
+          </div>
+          <div class="hero-box-gallery-image ">
+            <img
+              src="image/image-strawberry-daihuku.jpg"
+              alt="image-strawberry-daihuku"
+            />
+
+        </div>
+          <!-- <div class="hero-box-gallery-image-show">
+            <p>
+              Hot and fresh Japanese homemade breads are now avairable in
+              Vancouver from Mami's Bakery!
+            </p>
+            <div class="hero-box-comment-btn">
+              <button type="button" class="main-btn"><a href="#menu">Menu</a></button>
+              <button type="button" class="main-btn"><a href="#access/contact">Location</a></button>
+              
+            </div>
+            </div> -->
+
+
+
+      </div>
+      <div class="hero-box-comment ">
+        <p>
+          Hot and fresh Japanese homemade breads are now avairable in
+          Vancouver from Mami's Bakery!
+        </p>
+        <div class="hero-box-comment-btn">
+          <button type="button" class="btn main-btn"><a href="#menu">Menu</a></button>
+          <button type="button" class="btn main-btn"><a href="#access/contact">Location</a></button>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Feature -->
+    <section class="feature">
+      <div class="feature-top ">
+        <h2>Healthy Ingredient</h2>
+        <p>
+          Bread and sweets present you happiness and joyful moment with sugar,
+          yet we believe we can enjoy the moment healthier and sustainably. Come
+          and try our slightly sweet and hot/fresh tasty Japanese-style bread.
+        </p>
+      </div>
+      <div class="feature-bottom ">
+        <div class="feature-bottom-box ">
+          <h3>50-70% sugar off</h3>
+          <p>
+            Our bread and sweets are not TOO SWEET. They are just nice and
+            perfect for dessert!
+          </p>
+        </div>
+        <div class="feature-bottom-box">
+          <h3>Home-grow Organic</h3>
+          <p>
+            We try to make our ingredient by ourself or use local organic food.
+          </p>
+        </div>
+        <div class="feature-bottom-box">
+          <h3>Calorie off</h3>
+          <p>
+            Not only sugar, try to use less butter and more, yet keep the taste.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- menu -->
+    <section class="menu" id="menu">
+      <div class="menu-imgbox">
+       
+        <!-- 
+        <div class="card ">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading ">Swiss Zopf</h1>
+            <p class="card-overlay-paragraph">Price: $5.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-swiss-zopf.jpg" width="200" class="card-img " />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Croissant</h1>
+            <p class="card-overlay-paragraph">Price: $3.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-croissant-bread.jpeg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Berry Bagel</h1>
+            <p class="card-overlay-paragraph">Price: $2.50</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-bagle-bread.jpeg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Whip Chestnut Cake</h1>
+            <p class="card-overlay-paragraph">Price: $40.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-whip-maroncake.jpg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading ">Apple Sweet-potato Pie</h1>
+            <p class="card-overlay-paragraph">Price: $45.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-apple-sweetpotato-pie.jpg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Chestnut Mini Cake</h1>
+            <p class="card-overlay-paragraph">Price: $8.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-maron-mini-cake.jpg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Hat Bread</h1>
+            <p class="card-overlay-paragraph">Price: $5.50</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-hat-bread.jpeg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Chestnut-past Bread</h1>
+            <p class="card-overlay-paragraph">Price: $4.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-malonpaste-bread.jpeg" class="card-img" />
+        </div>
+        <div class="card">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Peach Bread</h1>
+            <p class="card-overlay-paragraph">Price: $5.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-peach-bread.jpeg" class="card-img" />
+        </div>
+        <div class="card card-showlater">
+          <div class="card-overlay">
+            <h1 class="card-overlay-heading">Cream Bread</h1>
+            <p class="card-overlay-paragraph">Price: $5.00</p>
+            <button type="button" class="btn add-btn">Add to the cart</button>
+          </div>
+          <img src="image/image-cream-bread.jpeg" class="card-img" />
+        </div> -->
+
+      </div>
+    </section>
+
+    <!-- info/sns -->
+    <section class="infosns" id="access/contact">
+      <div class="infosns-accesscontact ">
+        <h1 class="titleh1">Access / Contact</h1>
+        <div class="infosns-accesscontact-box">
+          <div class="infosns-accesscontact-box-map ">
+            <iframe src="https://www.google.com/maps/embedpb=!1m14!1m8!1m3!1d650.6888748947916!2d-123.120155!3d49.28103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd64c377f2df4b19f!2sCornerstone%20International%20Community%20College%20of%20Canada%20-%20Tech%20Campus!5e0!3m2!1sen!2sus!4v1631730045392!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="infosns-accesscontact-box-contact ">
+            <table class="">
+              <tr>
+                <th>
+                  <img
+                    src="icon/bread/2x/outline_bakery_dining_black_24dp.png"
+                    alt="icon-bread"
+                  />
+                </th>
+                <th>
+                  <div>Open Hours:</div> 
+                  <div class="openhours">
+                    <div>6:00-17:00</div>
+                    <div>Tuesday - Sunday</div>
+
+                  </div>
+                  
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <img
+                    src="icon/tel/2x/outline_phone_black_24dp.png"
+                    alt="icon-tel"
+                  />
+                </th>
+                <th>+1 604 XXX XXX</th>
+              </tr>
+              <tr>
+                <th>
+                  <img
+                    src="icon/map/2x/outline_location_on_black_24dp.png"
+                    alt="icon-map"
+                  />
+                </th>
+                <th>
+                  816 Granville St,
+                  Vancouver, 
+                  BC V6Z 1K3
+                </th>
+              </tr>
+            </table>
+            <!-- <div class="infosns-accesscontact-box-contact-box">
+              <img
+                src="icon/bread/2x/outline_bakery_dining_black_24dp.png"
+                alt="icon-bread"
+              />
+              Open Hours: 6:00-17:00<br />
+              From Tueday to Sunday
+            </div>
+            <div class="infosns-accesscontact-box-contact-box">
+              <img
+                src="icon/tel/2x/outline_phone_black_24dp.png"
+                alt="icon-tel"
+              />
+              +1 604 XXX XXX
+            </div>
+            <div class="infosns-accesscontact-box-contact-box">
+              <img
+                src="icon/map/2x/outline_location_on_black_24dp.png"
+                alt="icon-map"
+              />
+              816 Granville St,<br />
+              Vancouver, <br />
+              BC V6Z 1K3
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="infosns-followus ">
+        <h1 class="titleh1">Follow us</h1>
+        <div class="infosns-followus-img ">
+          <img src="image/image-instagram.png" alt="image-instagram" />
+          <p><ion-icon name="logo-instagram"></ion-icon> @mamisbakery</p>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer ">
+      <div class="footer-title ">
+        <h1><a href="#">Mami's Bakery</a></h1>
+      </div>
+      <div class="footer-navigation ">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a href="#menu" class="footer-list-link">Menu</a>
+          </li>
+          <li class="footer-list-item ">
+            <a href="#access/contact" class="footer-list-link">Access/Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright ">
+        <p>&copy; 2021 Copyright: Mami's Bakery</p>
+      </div>
+    </footer>
+        <!-- js -->
+        <script src="./script.js"></script>
+  </body>
+</html>
