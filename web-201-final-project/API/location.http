@@ -1,0 +1,2 @@
+GET https://api.openweathermap.org/data/2.5/weather?lat=-123.1061864&lon=-123.1061864&appid=205e839323c0b677e75442c065061cf4
+
